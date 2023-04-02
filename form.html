@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Registration</title>
+    <script src="form.js"></script>
+</head>
+<body>
+    <h1>Course Registration</h1>
+    <form action="submit.html"  onsubmit="return validation()">
+        <label>Name :</label>
+        <input type="text" id="name" class="name" placeholder="Enter your Name"><br><br>
+        <label>Email-id :</label>
+        <input type="email" id="email" class="email" placeholder="Enter your Email"><br><br>
+        <label>Password :</label>
+        <input type="password" id="pass" class="pass"><br><br>
+        <label>Confirm Password :</label>
+        <input type="password" id="cpass" class="cpass"><br><br>
+        <label>Mobile No :</label>
+        <input type="number" id="no" class="no"><br><br>
+        <label>Date of birth :</label>
+        <input type="date"><br><br>
+        <label>Nationality :</label>
+        <input type="text" id="nat" class="nat"><br><br>
+        <label>Gender :</label><br><br>
+        <input type="radio" name="gender" value="male">Male
+        <input type="radio" name="gender" value="female">Female
+        <input type="radio" name="gender" value="others">Others<br><br>
+        <label>Address :</label><br>
+        <textarea></textarea><br><br>
+        <label>Department :</label>
+        <select type="text" name="dept">
+            <option>Select</option>
+            <option name="dept" value="cse">CSE</option>
+            <option name="dept" value="ai">AI</option>
+            <option name="dept" value="'ece">ECE</option>
+            <option name="dept" value="eee">EEE</option>
+            <option name="dept" value="civil">CIVIL</option>
+        </select><br><br>
+        <label>course :</label>
+        <select type="text" name="course"> 
+            <option>Select</option>
+            <option value="wt">WEB TECHNOLOGY</option>
+            <option value="os">Operating system</option>
+            <option value="aml">Applied Machine Learning</option>
+            <option value="ot">Optimization Techniques</option>
+            <option value="oops">Java</option>
+            <option value="plc">Plc</option>
+        </select><br><br>
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
